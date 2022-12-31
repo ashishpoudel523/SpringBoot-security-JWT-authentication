@@ -4,8 +4,6 @@
 The diagram shows flow of how we implement User Registration, User Login and Authorization process.
 
 
-
-
 ## Dependency
 – If you want to use PostgreSQL:
 ```xml

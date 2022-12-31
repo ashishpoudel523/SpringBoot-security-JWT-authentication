@@ -29,7 +29,6 @@ import com.bezkoder.springjwt.security.services.UserDetailsServiceImpl;
 public class WebSecurityConfig { // extends WebSecurityConfigurerAdapter {
   @Autowired
   UserDetailsServiceImpl userDetailsService;
-
   @Autowired
   private AuthEntryPointJwt unauthorizedHandler;
 
@@ -64,6 +63,8 @@ public class WebSecurityConfig { // extends WebSecurityConfigurerAdapter {
     return authConfig.getAuthenticationManager();
   }
 
+  
+    //its used to encode password to some hash key
   @Bean
   public PasswordEncoder passwordEncoder() {
     return new BCryptPasswordEncoder();
